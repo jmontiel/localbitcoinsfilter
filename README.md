@@ -9,6 +9,10 @@ It's a small modification but it has helped me. It does 2 things:
 
 These 2 mods allowed me to easily view the highest/lowest amounts and see those who were ready to do a trade now. localbitcoins is a nice looking site but I'm surprised they didn't add some basic filtering.
 
+# Video
+
+[![video demo](http://img.youtube.com/vi/MuMQKhoemPo/0.jpg)](https://www.youtube.com/watch?v=MuMQKhoemPo "video demo")
+
 # Install
 
 This has only been tested on Chrome but should work on Firefox. To get it working on Chrome you need to install the following extension:
