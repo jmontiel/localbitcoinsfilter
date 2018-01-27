@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         localbitcoins filter
-// @namespace    https://srchub.org
-// @version      0.2
+// @namespace    
+// @version      0.2.1
 // @description  Adds some filters and sorting to localbitcoins
 // @author       Nathan Adams <adamsna@datanethost.net>
 // @match        https://localbitcoins.com/*
