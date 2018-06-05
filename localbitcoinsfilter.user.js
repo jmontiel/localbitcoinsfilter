@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         localbitcoins filter
 // @namespace    
-// @version      0.2.1
+// @version      0.2.2
 // @description  Adds some filters and sorting to localbitcoins
 // @author       Nathan Adams <adamsna@datanethost.net>
 // @match        https://localbitcoins.com/*
