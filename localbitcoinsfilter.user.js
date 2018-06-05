@@ -89,18 +89,10 @@ jQuery.fn.sortElements = (function(){
 })();
 
 
-$(".pagination-block").first().after('Hide non VEF <input type="checkbox" id="non-vef"> | Hide Recent <input type="checkbox" id="hideRecent"> | Hide Offline <input type="checkbox" id="hideOffline">');
-
-$("#hideRecent").click(function(e) {
-    $(".online-status-recent").closest("tr").toggle();
-});
-
-$("#hideOffline").click(function(e) {
-    $(".online-status-offline").closest("tr").toggle();
-});
+$(".pagination-block").first().after('Hide non VEF, Recent & OffLine <input type="checkbox" id="non-vef">');
 
 $("#non-vef").click(function(e) {
-    $(".column-price").not(":contains('VEF')").closest("tr").toggle();
+    $(".column-price:not(:contains('VEF')), .online-status-offline, .online-status-recent").closest("tr").toggle();
 });
 
 var table = $('.table-bitcoins').first();
@@ -120,7 +112,7 @@ $('.header-price').first()
             return $(this).index() === thIndex;
 
         }).sortElements(function(a, b){
-            return Number(jQuery.trim($.text([a]).replace(/,/g, '') ).split(" ")[0]) > Number(jQuery.trim($.text([b]).replace(/,/g, '') ).split(" ")[0]) ?
+            return Number(jQuery.trim($.text([a]).replace(/,/g, '') ).split(" ")[0]) < Number(jQuery.trim($.text([b]).replace(/,/g, '') ).split(" ")[0]) ?
                 inverse ? -1 : 1
             : inverse ? 1 : -1;
 
@@ -142,8 +134,7 @@ $(".header-price").first().hover(function() {
 }, function() {
     $(this).css('cursor','auto');
 });
+
 $('.header-price').click();
-if (window.location.href.indexOf("sell") > -1) {
-    $('.header-price').click();
-    $('#non-vef').click();
-}
+$('#non-vef').click();
+
