@@ -5,8 +5,8 @@
 // @description  Adds some filters and sorting to localbitcoins
 // @author       Nathan Adams <adamsna@datanethost.net>
 // @match        https://localbitcoins.com/*
-// @updateURL    https://github.com/jmontiel/localbitcoinsfilter/blob/master/localbitcoinsfilter.user.js
-// @downloadURL  https://github.com/jmontiel/localbitcoinsfilter/blob/master/localbitcoinsfilter.user.js
+// @updateURL    https://github.com/jmontiel/localbitcoinsfilter/raw/master/localbitcoinsfilter.user.js
+// @downloadURL  https://github.com/jmontiel/localbitcoinsfilter/raw/master/localbitcoinsfilter.user.js
 // @grant        none
 // ==/UserScript==
 // License: MIT
